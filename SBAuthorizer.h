@@ -20,6 +20,6 @@ typedef bool (^finishedAuthorization)();
 @property (nonatomic, strong) NSURLProtectionSpace *protectionSpace;
 
 -(BOOL) authorizeUser:(NSString *)username withPassword:(NSString *)password againstURL:(NSURL *)URL realm:(NSString *)realm;
--(void) authorizeUser:(NSString *)username withPassword:(NSString *)password againstURL:(NSURL *)URL realm:(NSString *)realm andCallBackBlock:(^finishedAuthorization)callback;
+-(void) authorizeUser:(NSString *)username withPassword:(NSString *)password againstURL:(NSURL *)URL realm:(NSString *)realm andCallBackBlock:(finishedAuthorization)callback;
 
 @end

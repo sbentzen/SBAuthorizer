@@ -5,7 +5,7 @@
  // Created by Shaun Bentzen on 2011-12-21.
  // Copyright 2011 Shaun Bentzen. All rights reserved.
  // 
-#import "SBAuthorizer.m"
+#import "SBAuthorizer.h"
 
 @implementation SBAuthorizer
 
@@ -32,11 +32,12 @@
 -(BOOL) authorizeUser:(NSString *)username withPassword:(NSString *)password againstURL:(NSURL *)URL realm:(NSString *)realm {
 	protectionSpace = [[NSURLProtectionSpace alloc] initWithHost:[URL host] port:443 protocol:NSURLProtectionSpaceHTTPS realm:realm authenticationMethod:NSURLAuthenticationMethodServerTrust];
 	[[NSURLCredentialStorage sharedCredentialStorage] setDefaultCredential:[NSURLCredential credentialWithUser:username password:password persistence:NSURLCredentialPersistenceForSession] forProtectionSpace:_protectionSpace];
-	NSURLConnection *authorizationConnection = [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:URL delegate:self];
+	NSURLConnection *authorizationConnection = [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:URL] delegate:self];
+
 }
 
--(void) authorizeUser:(NSString *)username withPassword:(NSString *)password againstURL:(NSURL *)url inRealm:(NSString *)realm andCallBackBlock:(^finishedAuthorization)callback{
-	if ([self authorizeUser:username withPassword:password againstURL:url realm:realm] == YES){
+-(void) authorizeUser:(NSString *)username withPassword:(NSString *)password againstURL:(NSURL *)URL realm:(NSString *)realm andCallBackBlock:(finishedAuthorization)callback{
+	if ([self authorizeUser:username withPassword:password againstURL:URL realm:realm] == YES){
 		callback();
 	}
 	else{
