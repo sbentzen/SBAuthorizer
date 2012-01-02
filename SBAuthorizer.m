@@ -46,7 +46,7 @@
 
 
 -(void) startAuthorization{
-    NSLog(@"HALLO");
+    // NSLog(@"HALLO");
     _protectionSpace = [[NSURLProtectionSpace alloc] initWithHost:[_url host] port:443 protocol:NSURLProtectionSpaceHTTPS realm:_realm authenticationMethod:NSURLAuthenticationMethodServerTrust];
     [[NSURLCredentialStorage sharedCredentialStorage] setDefaultCredential:[NSURLCredential credentialWithUser:_username password:_password persistence:NSURLCredentialPersistenceForSession] forProtectionSpace:_protectionSpace];
     NSURLConnection *authenticationConnection = [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:_url] delegate:self];
@@ -87,11 +87,11 @@ didReceiveResponse:(NSURLResponse *)response
 - (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge{
 	if ([challenge previousFailureCount] == 0) {
 			[[challenge sender] useCredential:[[NSURLCredentialStorage sharedCredentialStorage] defaultCredentialForProtectionSpace:_protectionSpace] forAuthenticationChallenge:challenge];
-        NSLog(@"Challenge Attempted");
+        // NSLog(@"Challenge Attempted");
 		} 
 	    else {
 	        [[challenge sender] cancelAuthenticationChallenge:challenge];
-            NSLog(@"Challenge Failed");
+            // NSLog(@"Challenge Failed");
 	    }
 }
 
