@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE7B1B6614B2179C007BC4ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7B1B6514B2179C007BC4ED /* UIKit.framework */; };
+		CE7B1B6814B2179C007BC4ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7B1B6714B2179C007BC4ED /* Foundation.framework */; };
+		CE7B1B6A14B2179C007BC4ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7B1B6914B2179C007BC4ED /* CoreGraphics.framework */; };
+		CE7B1B7014B2179C007BC4ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE7B1B6E14B2179C007BC4ED /* InfoPlist.strings */; };
+		CE7B1B7214B2179C007BC4ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7B1B7114B2179C007BC4ED /* main.m */; };
+		CE7B1B7614B2179C007BC4ED /* SBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7B1B7514B2179C007BC4ED /* SBAppDelegate.m */; };
+		CE7B1B7914B2179C007BC4ED /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7B1B7714B2179C007BC4ED /* MainStoryboard_iPhone.storyboard */; };
+		CE7B1B7C14B2179C007BC4ED /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7B1B7A14B2179C007BC4ED /* MainStoryboard_iPad.storyboard */; };
+		CE7B1B7F14B2179C007BC4ED /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7B1B7E14B2179C007BC4ED /* SBViewController.m */; };
+		CE7B1B8714B2179C007BC4ED /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7B1B8614B2179C007BC4ED /* SenTestingKit.framework */; };
+		CE7B1B8814B2179C007BC4ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7B1B6514B2179C007BC4ED /* UIKit.framework */; };
+		CE7B1B8914B2179C007BC4ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7B1B6714B2179C007BC4ED /* Foundation.framework */; };
+		CE7B1B9114B2179C007BC4ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE7B1B8F14B2179C007BC4ED /* InfoPlist.strings */; };
+		CE7B1B9414B2179C007BC4ED /* SBAuthorizerTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7B1B9314B2179C007BC4ED /* SBAuthorizerTestTests.m */; };
+		CE7B1B9F14B217B4007BC4ED /* SBAuthorizer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7B1B9E14B217B4007BC4ED /* SBAuthorizer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE7B1B8A14B2179C007BC4ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE7B1B5814B2179C007BC4ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE7B1B6014B2179C007BC4ED;
+			remoteInfo = SBAuthorizerTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE7B1B6114B2179C007BC4ED /* SBAuthorizerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBAuthorizerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7B1B6514B2179C007BC4ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE7B1B6714B2179C007BC4ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE7B1B6914B2179C007BC4ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE7B1B6D14B2179C007BC4ED /* SBAuthorizerTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SBAuthorizerTest-Info.plist"; sourceTree = "<group>"; };
+		CE7B1B6F14B2179C007BC4ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE7B1B7114B2179C007BC4ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE7B1B7314B2179C007BC4ED /* SBAuthorizerTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBAuthorizerTest-Prefix.pch"; sourceTree = "<group>"; };
+		CE7B1B7414B2179C007BC4ED /* SBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAppDelegate.h; sourceTree = "<group>"; };
+		CE7B1B7514B2179C007BC4ED /* SBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAppDelegate.m; sourceTree = "<group>"; };
+		CE7B1B7814B2179C007BC4ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		CE7B1B7B14B2179C007BC4ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		CE7B1B7D14B2179C007BC4ED /* SBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBViewController.h; sourceTree = "<group>"; };
+		CE7B1B7E14B2179C007BC4ED /* SBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
+		CE7B1B8514B2179C007BC4ED /* SBAuthorizerTestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBAuthorizerTestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7B1B8614B2179C007BC4ED /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CE7B1B8E14B2179C007BC4ED /* SBAuthorizerTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SBAuthorizerTestTests-Info.plist"; sourceTree = "<group>"; };
+		CE7B1B9014B2179C007BC4ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE7B1B9214B2179C007BC4ED /* SBAuthorizerTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAuthorizerTestTests.h; sourceTree = "<group>"; };
+		CE7B1B9314B2179C007BC4ED /* SBAuthorizerTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAuthorizerTestTests.m; sourceTree = "<group>"; };
+		CE7B1B9D14B217B4007BC4ED /* SBAuthorizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBAuthorizer.h; path = ../../SBAuthorizer.h; sourceTree = "<group>"; };
+		CE7B1B9E14B217B4007BC4ED /* SBAuthorizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBAuthorizer.m; path = ../../SBAuthorizer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE7B1B5E14B2179C007BC4ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7B1B6614B2179C007BC4ED /* UIKit.framework in Frameworks */,
+				CE7B1B6814B2179C007BC4ED /* Foundation.framework in Frameworks */,
+				CE7B1B6A14B2179C007BC4ED /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7B1B8114B2179C007BC4ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7B1B8714B2179C007BC4ED /* SenTestingKit.framework in Frameworks */,
+				CE7B1B8814B2179C007BC4ED /* UIKit.framework in Frameworks */,
+				CE7B1B8914B2179C007BC4ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE7B1B5614B2179C007BC4ED = {
+			isa = PBXGroup;
+			children = (
+				CE7B1B6B14B2179C007BC4ED /* SBAuthorizerTest */,
+				CE7B1B8C14B2179C007BC4ED /* SBAuthorizerTestTests */,
+				CE7B1B6414B2179C007BC4ED /* Frameworks */,
+				CE7B1B6214B2179C007BC4ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE7B1B6214B2179C007BC4ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B1B6114B2179C007BC4ED /* SBAuthorizerTest.app */,
+				CE7B1B8514B2179C007BC4ED /* SBAuthorizerTestTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE7B1B6414B2179C007BC4ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B1B6514B2179C007BC4ED /* UIKit.framework */,
+				CE7B1B6714B2179C007BC4ED /* Foundation.framework */,
+				CE7B1B6914B2179C007BC4ED /* CoreGraphics.framework */,
+				CE7B1B8614B2179C007BC4ED /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE7B1B6B14B2179C007BC4ED /* SBAuthorizerTest */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B1B9D14B217B4007BC4ED /* SBAuthorizer.h */,
+				CE7B1B9E14B217B4007BC4ED /* SBAuthorizer.m */,
+				CE7B1B7414B2179C007BC4ED /* SBAppDelegate.h */,
+				CE7B1B7514B2179C007BC4ED /* SBAppDelegate.m */,
+				CE7B1B7714B2179C007BC4ED /* MainStoryboard_iPhone.storyboard */,
+				CE7B1B7A14B2179C007BC4ED /* MainStoryboard_iPad.storyboard */,
+				CE7B1B7D14B2179C007BC4ED /* SBViewController.h */,
+				CE7B1B7E14B2179C007BC4ED /* SBViewController.m */,
+				CE7B1B6C14B2179C007BC4ED /* Supporting Files */,
+			);
+			path = SBAuthorizerTest;
+			sourceTree = "<group>";
+		};
+		CE7B1B6C14B2179C007BC4ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B1B6D14B2179C007BC4ED /* SBAuthorizerTest-Info.plist */,
+				CE7B1B6E14B2179C007BC4ED /* InfoPlist.strings */,
+				CE7B1B7114B2179C007BC4ED /* main.m */,
+				CE7B1B7314B2179C007BC4ED /* SBAuthorizerTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE7B1B8C14B2179C007BC4ED /* SBAuthorizerTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B1B9214B2179C007BC4ED /* SBAuthorizerTestTests.h */,
+				CE7B1B9314B2179C007BC4ED /* SBAuthorizerTestTests.m */,
+				CE7B1B8D14B2179C007BC4ED /* Supporting Files */,
+			);
+			path = SBAuthorizerTestTests;
+			sourceTree = "<group>";
+		};
+		CE7B1B8D14B2179C007BC4ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B1B8E14B2179C007BC4ED /* SBAuthorizerTestTests-Info.plist */,
+				CE7B1B8F14B2179C007BC4ED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE7B1B6014B2179C007BC4ED /* SBAuthorizerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7B1B9714B2179C007BC4ED /* Build configuration list for PBXNativeTarget "SBAuthorizerTest" */;
+			buildPhases = (
+				CE7B1B5D14B2179C007BC4ED /* Sources */,
+				CE7B1B5E14B2179C007BC4ED /* Frameworks */,
+				CE7B1B5F14B2179C007BC4ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBAuthorizerTest;
+			productName = SBAuthorizerTest;
+			productReference = CE7B1B6114B2179C007BC4ED /* SBAuthorizerTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE7B1B8414B2179C007BC4ED /* SBAuthorizerTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7B1B9A14B2179C007BC4ED /* Build configuration list for PBXNativeTarget "SBAuthorizerTestTests" */;
+			buildPhases = (
+				CE7B1B8014B2179C007BC4ED /* Sources */,
+				CE7B1B8114B2179C007BC4ED /* Frameworks */,
+				CE7B1B8214B2179C007BC4ED /* Resources */,
+				CE7B1B8314B2179C007BC4ED /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE7B1B8B14B2179C007BC4ED /* PBXTargetDependency */,
+			);
+			name = SBAuthorizerTestTests;
+			productName = SBAuthorizerTestTests;
+			productReference = CE7B1B8514B2179C007BC4ED /* SBAuthorizerTestTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE7B1B5814B2179C007BC4ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = SambaWorks;
+			};
+			buildConfigurationList = CE7B1B5B14B2179C007BC4ED /* Build configuration list for PBXProject "SBAuthorizerTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE7B1B5614B2179C007BC4ED;
+			productRefGroup = CE7B1B6214B2179C007BC4ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE7B1B6014B2179C007BC4ED /* SBAuthorizerTest */,
+				CE7B1B8414B2179C007BC4ED /* SBAuthorizerTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE7B1B5F14B2179C007BC4ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7B1B7014B2179C007BC4ED /* InfoPlist.strings in Resources */,
+				CE7B1B7914B2179C007BC4ED /* MainStoryboard_iPhone.storyboard in Resources */,
+				CE7B1B7C14B2179C007BC4ED /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7B1B8214B2179C007BC4ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7B1B9114B2179C007BC4ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE7B1B8314B2179C007BC4ED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE7B1B5D14B2179C007BC4ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7B1B7214B2179C007BC4ED /* main.m in Sources */,
+				CE7B1B7614B2179C007BC4ED /* SBAppDelegate.m in Sources */,
+				CE7B1B7F14B2179C007BC4ED /* SBViewController.m in Sources */,
+				CE7B1B9F14B217B4007BC4ED /* SBAuthorizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7B1B8014B2179C007BC4ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7B1B9414B2179C007BC4ED /* SBAuthorizerTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE7B1B8B14B2179C007BC4ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE7B1B6014B2179C007BC4ED /* SBAuthorizerTest */;
+			targetProxy = CE7B1B8A14B2179C007BC4ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE7B1B6E14B2179C007BC4ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE7B1B6F14B2179C007BC4ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE7B1B7714B2179C007BC4ED /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE7B1B7814B2179C007BC4ED /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		CE7B1B7A14B2179C007BC4ED /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE7B1B7B14B2179C007BC4ED /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		CE7B1B8F14B2179C007BC4ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE7B1B9014B2179C007BC4ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE7B1B9514B2179C007BC4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE7B1B9614B2179C007BC4ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE7B1B9814B2179C007BC4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBAuthorizerTest/SBAuthorizerTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../;
+				INFOPLIST_FILE = "SBAuthorizerTest/SBAuthorizerTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE7B1B9914B2179C007BC4ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBAuthorizerTest/SBAuthorizerTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../;
+				INFOPLIST_FILE = "SBAuthorizerTest/SBAuthorizerTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CE7B1B9B14B2179C007BC4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SBAuthorizerTest.app/SBAuthorizerTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBAuthorizerTest/SBAuthorizerTest-Prefix.pch";
+				INFOPLIST_FILE = "SBAuthorizerTestTests/SBAuthorizerTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CE7B1B9C14B2179C007BC4ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SBAuthorizerTest.app/SBAuthorizerTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBAuthorizerTest/SBAuthorizerTest-Prefix.pch";
+				INFOPLIST_FILE = "SBAuthorizerTestTests/SBAuthorizerTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE7B1B5B14B2179C007BC4ED /* Build configuration list for PBXProject "SBAuthorizerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7B1B9514B2179C007BC4ED /* Debug */,
+				CE7B1B9614B2179C007BC4ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE7B1B9714B2179C007BC4ED /* Build configuration list for PBXNativeTarget "SBAuthorizerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7B1B9814B2179C007BC4ED /* Debug */,
+				CE7B1B9914B2179C007BC4ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE7B1B9A14B2179C007BC4ED /* Build configuration list for PBXNativeTarget "SBAuthorizerTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7B1B9B14B2179C007BC4ED /* Debug */,
+				CE7B1B9C14B2179C007BC4ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE7B1B5814B2179C007BC4ED /* Project object */;
+}

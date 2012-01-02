@@ -8,18 +8,27 @@
  // 
  // 
 
-typedef bool (^finishedAuthorization)();
+
 
 @interface SBAuthorizer : NSObject <NSURLConnectionDelegate>
 {
 @private
+    void (^finishedAuthorization)(NSData *data, NSURLResponse *response, NSError *error);
+    NSString *_username;
+    NSString *_password;
+    NSString *_realm;
+    NSURL *_url;
 	NSURLProtectionSpace *protectionSpace;
-	
+	NSMutableData *receivedData;
+    NSURLResponse *receivedResponse;
 }
 
 @property (nonatomic, strong) NSURLProtectionSpace *protectionSpace;
-
--(BOOL) authorizeUser:(NSString *)username withPassword:(NSString *)password againstURL:(NSURL *)URL realm:(NSString *)realm;
--(void) authorizeUser:(NSString *)username withPassword:(NSString *)password againstURL:(NSURL *)URL realm:(NSString *)realm andCallBackBlock:(finishedAuthorization)callback;
-
+@property (nonatomic, strong) NSString *_username;
+@property (nonatomic, strong) NSString *_password;
+@property (nonatomic, strong) NSString *_realm;
+@property (nonatomic, strong) NSURL *_url;
+-(id) initWithUser:(NSString *)username withPassword:(NSString *)password againstURL:(NSURL *)URL realm:(NSString *)realm andCallback:(void (^)(NSData *data, NSURLResponse *response, NSError *error))callback;
+-(id) initWithUser:(NSString *)username withPassword:(NSString *)password againstURL:(NSURL *)URL andCallback:(void (^)(NSData *data, NSURLResponse *response, NSError *error))callback;
+- (void) startAuthorization;
 @end
