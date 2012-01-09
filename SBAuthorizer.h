@@ -18,7 +18,7 @@
     NSString *_password;
     NSString *_realm;
     NSURL *_url;
-	NSURLProtectionSpace *protectionSpace;
+	NSURLProtectionSpace *_protectionSpace;
 	NSMutableData *receivedData;
     NSURLResponse *receivedResponse;
 }
