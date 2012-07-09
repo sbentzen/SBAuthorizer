@@ -10,10 +10,10 @@
 @implementation SBAuthorizer
 
 @synthesize protectionSpace = _protectionSpace;
-@synthesize _username;
-@synthesize _password;
-@synthesize _realm;
-@synthesize _url;
+@synthesize username = _username;
+@synthesize password = _password;
+@synthesize realm = _realm;
+@synthesize url = _url;
 - (id)init
 {
 	if((self = [super init]))
