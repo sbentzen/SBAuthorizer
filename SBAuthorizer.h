@@ -6,9 +6,6 @@
  // Copyright 2011 Shaun Bentzen. All rights reserved.
  // 
  // 
- // 
-
-
 
 /**
  *  A class to abstract authentication and provide callback methods upon successful completion of authentication
