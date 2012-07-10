@@ -22,23 +22,23 @@
 	return self;
 }
 
--(id) initWithUser:(NSString *)username withPassword:(NSString *)password againstURL:(NSURL *)URL realm:(NSString *)realm andCallback:(void (^)(NSData *data, NSURLResponse *response, NSError *error))callback{
+-(id) initWithUser:(NSString *)aUsername withPassword:(NSString *)aPassword againstURL:(NSURL *)URL realm:(NSString *)aRealm andCallback:(void (^)(NSData *data, NSURLResponse *response, NSError *error))callback{
 	
     if (self = [super init]) {
         finishedAuthorization = [callback copy];
-        _username = [username copy];
-        _password = [password copy];
-        _realm = [realm copy];
+        _username = [aUsername copy];
+        _password = [aPassword copy];
+        _realm = [aRealm copy];
         _url = [URL copy];
     }
 	return self;
 }
--(id) initWithUser:(NSString *)username withPassword:(NSString *)password againstURL:(NSURL *)URL andCallback:(void (^)(NSData *data, NSURLResponse *response, NSError *error))callback{
+-(id) initWithUser:(NSString *)aUsername withPassword:(NSString *)aPassword againstURL:(NSURL *)URL andCallback:(void (^)(NSData *data, NSURLResponse *response, NSError *error))callback{
 	
     if (self = [super init]) {
         finishedAuthorization = [callback copy];
-        _username = [username copy];
-        _password = [password copy];
+        _username = [aUsername copy];
+        _password = [aPassword copy];
         _url = [URL copy];
     }
 	return self;

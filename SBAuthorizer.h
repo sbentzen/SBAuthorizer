@@ -54,7 +54,7 @@
  * @param callback the callback block and what to do when authentication is complete
 	
 */
--(id) initWithUser:(NSString *)username withPassword:(NSString *)password againstURL:(NSURL *)URL realm:(NSString *)realm andCallback:(void (^)(NSData *data, NSURLResponse *response, NSError *error))callback;
+-(id) initWithUser:(NSString *)aUsername withPassword:(NSString *)aPassword againstURL:(NSURL *)URL realm:(NSString *)realm andCallback:(void (^)(NSData *data, NSURLResponse *response, NSError *error))callback;
 
 /**
  * Another initializer method
@@ -64,7 +64,7 @@
  * @param callback the callback block and what to do when authentication is complete
 	
  */
--(id) initWithUser:(NSString *)username withPassword:(NSString *)password againstURL:(NSURL *)URL andCallback:(void (^)(NSData *data, NSURLResponse *response, NSError *error))callback;
+-(id) initWithUser:(NSString *)aUsername withPassword:(NSString *)aPassword againstURL:(NSURL *)URL andCallback:(void (^)(NSData *data, NSURLResponse *response, NSError *error))callback;
 
 /**
  * Begin the NSURL connection with the information provided to authenticate the user
