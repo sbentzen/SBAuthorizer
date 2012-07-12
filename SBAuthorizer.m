@@ -55,20 +55,15 @@
 
 #pragma mark NSURLConnection delegate
 
-- (void)connection:(NSURLConnection *)connection
-didReceiveResponse:(NSURLResponse *)response
-{
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
     receivedResponse = response;
 }
 
-- (void)connection:(NSURLConnection *)connection
-  didFailWithError:(NSError *)error
-{
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
     finishedAuthorization(nil, nil, error);
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{
     if (receivedData == nil) {
         receivedData = [[NSMutableData alloc] initWithData:data];
     } else {
@@ -76,9 +71,26 @@ didReceiveResponse:(NSURLResponse *)response
     }
 }
 
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection
-{
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection{
     finishedAuthorization(receivedData, receivedResponse, nil);
+}
+- (BOOL)connectionShouldUseCredentialStorage:(NSURLConnection *)connection{
+    if ([[NSURLCredentialStorage sharedCredentialStorage] defaultCredentialForProtectionSpace:_protectionSpace] != nil) {
+        return YES;
+    }
+    else{
+        return NO;
+    }
+}
+- (void)connection:(NSURLConnection *)connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge{
+    if ([challenge previousFailureCount] == 0) {
+        [[challenge sender] useCredential:[[NSURLCredentialStorage sharedCredentialStorage] defaultCredentialForProtectionSpace:_protectionSpace] forAuthenticationChallenge:challenge];
+        // NSLog(@"Challenge Attempted");
+    }
+    else {
+        [[challenge sender] cancelAuthenticationChallenge:challenge];
+        // NSLog(@"Challenge Failed");
+    }
 }
 
 - (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace{
