@@ -10,10 +10,10 @@
 @implementation SBAuthorizer
 
 @synthesize protectionSpace = _protectionSpace;
-@synthesize username = _username;
-@synthesize password = _password;
-@synthesize realm = _realm;
-@synthesize url = _url;
+@synthesize username;
+@synthesize password;
+@synthesize realm;
+@synthesize url;
 - (id)init
 {
 	if((self = [super init]))
@@ -26,10 +26,10 @@
 	
     if (self = [super init]) {
         finishedAuthorization = [callback copy];
-        _username = [aUsername copy];
-        _password = [aPassword copy];
-        _realm = [aRealm copy];
-        _url = [URL copy];
+        self.username = [aUsername copy];
+        self.password = [aPassword copy];
+        self.realm = [aRealm copy];
+        self.url = [URL copy];
     }
 	return self;
 }
@@ -37,9 +37,9 @@
 	
     if (self = [super init]) {
         finishedAuthorization = [callback copy];
-        _username = [aUsername copy];
-        _password = [aPassword copy];
-        _url = [URL copy];
+        self.username = [aUsername copy];
+        self.password = [aPassword copy];
+        self.url = [URL copy];
     }
 	return self;
 }
@@ -47,9 +47,9 @@
 
 -(void) startAuthorization{
     // NSLog(@"HALLO");
-    _protectionSpace = [[NSURLProtectionSpace alloc] initWithHost:[_url host] port:443 protocol:NSURLProtectionSpaceHTTPS realm:_realm authenticationMethod:NSURLAuthenticationMethodServerTrust];
-    [[NSURLCredentialStorage sharedCredentialStorage] setDefaultCredential:[NSURLCredential credentialWithUser:_username password:_password persistence:NSURLCredentialPersistenceForSession] forProtectionSpace:_protectionSpace];
-    NSURLConnection *authenticationConnection = [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:_url] delegate:self];
+    self.protectionSpace = [[NSURLProtectionSpace alloc] initWithHost:[self.url host] port:443 protocol:NSURLProtectionSpaceHTTPS realm:self.realm authenticationMethod:NSURLAuthenticationMethodServerTrust];
+    [[NSURLCredentialStorage sharedCredentialStorage] setDefaultCredential:[NSURLCredential credentialWithUser:self.username password:self.password persistence:NSURLCredentialPersistenceForSession] forProtectionSpace:self.protectionSpace];
+    NSURLConnection *authenticationConnection = [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:self.url] delegate:self];
     [authenticationConnection start];
 }
 
